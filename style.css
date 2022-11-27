@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --pcolor:#FFAD18;
+}
+.img-col{
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+.img-row{
+    min-height: 15vh;
+    background: #002e5b;
+}
+
+.img-row ::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.img-row img{
+    object-fit: cover;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 300px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    position: relative;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #212529;;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover ::after{
+    width: 100%;
+    transition:
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/bg/doom.jpg);
+     width: 100%;
+     background-position: center;
+     background-size: cover;
+
+     position: relative;
+     margin: auto;
+     text-align: center;
+     padding-top: 100px;
+}
+.vertical {
+    width: 10px;
+min-height: 10%;
+margin-bottom: 150px;
+background: #ffad18;
+        }
+.row{
+    justify-content: space-between;
+}
+.mcol{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.mcol h1,h3{
+    color: #FFAD18;
+}
+.mcol p,h5{
+    color: #fff;
+}
+#su{
+    margin-left: 100px;
+}
+#yr{
+    margin-right: 100px;
+}
+.entre{
+    background: #FFAD18;
+
+}
+.entre h4{
+    margin-left: 80px;
+    color: #fff;
+    font-size: 20px;
+}
+.entre p{
+    margin-left: 80px;
+    font-size: 17px;
+}
+.last-row{
+    margin-top: 5%;
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #002e5b;
+}
+#limg{
+    width: 250px;
+    background: #fff;
+}
+#lp{
+    margin-top: 15px;
+}
+.col{
+    margin-left: 3%;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    color: #fff;
+}

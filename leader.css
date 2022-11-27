@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.img-col{
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+.img-row{
+    min-height: 15vh;
+    background: #002e5b;
+}
+
+.img-row ::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.img-row img{
+    object-fit: cover;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 300px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    position: relative;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #212529;;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover ::after{
+    width: 100%;
+    transition:
+}
+
+.title{
+    background-color: #242D42;
+    min-height: 10vh;
+    width: 100%;
+    display: block;
+}
+.title .container{
+    padding-top: 13px;
+    padding-left: 80px;
+    padding-right: 15px;
+}
+#img1{
+    padding-left: 30%;
+    width: 700px;
+    color: #002e5b;
+    padding-top: 50px;
+}
+.title h1{
+    top: 50%;
+    bottom: 50%;
+    color: #fff;
+    font-size: 5vh;
+    font-weight: 700;
+}
+.grey-bar{
+    background-color: #F5F5F5 !important;
+}
+.legacy h1 {
+    font-size: 30px;
+    display: inline-block;
+}
+.people h1{
+    color: #002e5b;
+    font-weight: 300px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.people{
+     width: 100%;
+     margin: auto;
+     text-align: center;
+     padding-top: 100px;
+}
+.people-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.people p{
+    font-size: 18px;
+}
+.people-col img{
+    width: 80%;
+    border-radius: 10px;
+}
+#posting{
+    color: #FFAD18 ;
+}
+#ln1{
+    width: 17%;
+    padding-left: 30%;
+}
+.legacy{
+    padding-left: 30%;
+    padding-right: 5%;
+}
+
+
+
+.last-row{
+    margin-top: 5%;
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #002e5b;
+}
+#limg{
+    width: 250px;
+    background: #fff;
+}
+#lp{
+    margin-top: 15px;
+}
+.col{
+    margin-left: 3%;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    color: #fff;
+}
